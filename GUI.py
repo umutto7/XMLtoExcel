@@ -1,0 +1,107 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'parser.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.2
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+import icons
+
+class Ui_mainwindow(object):
+    def setupUi(self, mainwindow):
+        mainwindow.setObjectName("mainwindow")
+        mainwindow.resize(863, 548)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/icons/xml.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        mainwindow.setWindowIcon(icon)
+        mainwindow.setAutoFillBackground(False)
+        mainwindow.setTabShape(QtWidgets.QTabWidget.Rounded)
+        self.centralwidget = QtWidgets.QWidget(mainwindow)
+        self.centralwidget.setStyleSheet("background-color:rgb(255, 238, 204);")
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Maximum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
+        self.label.setSizePolicy(sizePolicy)
+        self.label.setMinimumSize(QtCore.QSize(150, 150))
+        self.label.setMaximumSize(QtCore.QSize(400, 400))
+        self.label.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.label.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label.setStyleSheet("background-color: rgba(0, 0, 0,0.3); border-radius: 130%;")
+        self.label.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.label.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap(":/icons/pwc_logo_V2.png"))
+        self.label.setScaledContents(True)
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setObjectName("label")
+        self.verticalLayout.addWidget(self.label, 0, QtCore.Qt.AlignHCenter)
+        self.formLayout = QtWidgets.QFormLayout()
+        self.formLayout.setContentsMargins(100, 10, 100, -1)
+        self.formLayout.setHorizontalSpacing(10)
+        self.formLayout.setVerticalSpacing(6)
+        self.formLayout.setObjectName("formLayout")
+
+        self.gelen_btn = QtWidgets.QPushButton(self.centralwidget)
+        font = QtGui.QFont()
+        font.setFamily("Microsoft Sans Serif")
+        font.setPointSize(8)
+        self.gelen_btn.setFont(font)
+        self.gelen_btn.setStyleSheet("background-color: rgb(0, 0, 0);color: rgb(255, 170, 127);border-color: rgb(255, 170, 127);")
+        self.gelen_btn.setObjectName("gelen_btn")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.gelen_btn)
+        self.gelenlineEdit = QtWidgets.QLineEdit(self.centralwidget)
+        self.gelenlineEdit.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.gelenlineEdit.setObjectName("gelenlineEdit")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.gelenlineEdit)
+        self.sonu_btn = QtWidgets.QPushButton(self.centralwidget)
+        font = QtGui.QFont()
+        font.setFamily("Microsoft Sans Serif")
+        font.setBold(False)
+        font.setUnderline(False)
+        font.setWeight(50)
+        font.setStrikeOut(False)
+        font.setKerning(True)
+        self.sonu_btn.setFont(font)
+        self.sonu_btn.setStyleSheet("background-color: rgb(0, 0, 0);color: rgb(255, 170, 127);border-color: rgb(255, 170, 127);")
+        self.sonu_btn.setObjectName("sonu_btn")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.sonu_btn)
+        self.sonucLineEdit = QtWidgets.QLineEdit(self.centralwidget)
+        self.sonucLineEdit.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.sonucLineEdit.setObjectName("sonucLineEdit")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.sonucLineEdit)
+        self.verticalLayout.addLayout(self.formLayout)
+        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem1)
+        self.convert_btn = QtWidgets.QPushButton(self.centralwidget)
+        self.convert_btn.setStyleSheet("background-color: rgb(0, 0, 0);color: rgb(255, 170, 127);border-color: rgb(255, 170, 127);")
+        self.convert_btn.setObjectName("convert_btn")
+        self.horizontalLayout.addWidget(self.convert_btn)
+        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem2)
+        self.verticalLayout.addLayout(self.horizontalLayout)
+        spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem3)
+        mainwindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(mainwindow)
+        QtCore.QMetaObject.connectSlotsByName(mainwindow)
+
+    def retranslateUi(self, mainwindow):
+        _translate = QtCore.QCoreApplication.translate
+        mainwindow.setWindowTitle(_translate("mainwindow", "XmltoExcel"))
+        self.gelen_btn.setText(_translate("mainwindow", "GelenXML"))
+        self.sonu_btn.setText(_translate("mainwindow", "SonuçXML"))
+        self.convert_btn.setText(_translate("mainwindow", "Dönüştür"))
+

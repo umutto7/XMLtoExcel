@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>xml.png</file>
+    <file>pwc_logo_V2.png</file>
+  </qresource>
+</RCC>
