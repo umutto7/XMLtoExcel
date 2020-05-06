@@ -6,7 +6,6 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 import icons
 
@@ -48,7 +47,6 @@ class Ui_mainwindow(object):
         self.formLayout.setHorizontalSpacing(10)
         self.formLayout.setVerticalSpacing(6)
         self.formLayout.setObjectName("formLayout")
-
         self.gelen_btn = QtWidgets.QPushButton(self.centralwidget)
         font = QtGui.QFont()
         font.setFamily("Microsoft Sans Serif")
@@ -94,6 +92,10 @@ class Ui_mainwindow(object):
         spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.verticalLayout.addItem(spacerItem3)
         mainwindow.setCentralWidget(self.centralwidget)
+        self.message = QtWidgets.QStatusBar(mainwindow)
+        self.message.setObjectName("statusBar")
+        self.message.setStyleSheet("background-color:rgb(255, 238, 204);")
+        mainwindow.setStatusBar(self.message)
 
         self.retranslateUi(mainwindow)
         QtCore.QMetaObject.connectSlotsByName(mainwindow)
